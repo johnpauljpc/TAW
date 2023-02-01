@@ -248,7 +248,41 @@ body{
     
 }
 
+section{
+    padding: 2rem 7%;
+}
 
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 7%;
+}
+
+.home .image{
+    flex: 1 1 54rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 54rem;
+}
+
+.home .content h3{
+    color: var(--text-color-1);
+    font-size: 4rem;
+}
+
+.home .content p{
+    color: var(--text-color-2);
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    padding: 1rem 0;
+}
 
 
 
@@ -281,6 +315,10 @@ body{
 
     .header .login-form{
         right: 2rem;
+    }
+
+    section{
+        padding: 2rem;
     }
 
 }
