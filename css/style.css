@@ -323,9 +323,141 @@ section{
 
 }
 
+/* heading and places */
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--text-color-1);
+    font-size: 4rem;
+}
+
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+.heading span::before{
+    content: '';
+    position: absolute;
+    bottom: 1 rem; left: 0;
+    z-index:  -1;
+    background: var(--orange);
+    height: 100%; width: 100%;
+    clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+}
+
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.packages .box-container .box{
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.packages .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.packages .box-container .box .image img{
+    height: 100%; width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .image h3{
+    position: absolute;
+    top: 2.5rem; left: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding: .5rem 1.5rem;
+}
 
 
+.packages .box-container .box .image h3 i{
+    color: var(--orange);
+}
 
+.packages .box-container .box .content{
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.packages .box-container .box .content .price{
+    font-weight: 600;
+    color: var(--text-color-1);
+    font-size: 2.5rem;
+}
+
+.packages .box-container .box .content .price span{
+    font-weight: lighter;
+    color: var(--text-color-2);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.packages .box-container .box .content p{
+    /*  font-weight: lighter; */
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: var(--text-color-1);
+    line-height: 1.7rem;
+}
+
+/* our services style */
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+.services .box-container .box{
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    padding: 2rem;
+}
+
+.services .box-container .box span{
+    position: absolute;
+    top: .5rem; right: 2rem;
+    color: var(--text-color-2);
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.services .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    background:  var(--orange);
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.services .box-container .box h3{
+    color: var(--text-color-1);
+    font-size: 2.3rem;padding: .7rem 0;
+}
+.services .box-container .box p{
+    color:var(--text-color-1);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
 
 
 /* media queries */
