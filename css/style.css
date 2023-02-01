@@ -558,6 +558,41 @@ section{
     background: var(--orange);
 
 }
+
+/* contact form */
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form textarea,
+.contact form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    margin: .7rem 0;
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.contact form .inputBox input{
+    width: 49%;
+}
 /* media queries */
 
 @media (max-width:991px) {
@@ -585,6 +620,8 @@ section{
     section{
         padding: 2rem;
     }
+
+    
 
 }
 
@@ -624,7 +661,7 @@ section{
     .header .login-form{
         right: 2rem;
     }
-
+    
 }
 
 
@@ -635,6 +672,8 @@ section{
         font-size: 48%;
     }
 
-   
+    .contact form .inputBox input{
+        width: 100%;
+    }
 
 }
