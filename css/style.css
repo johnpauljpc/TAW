@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
   :root{
-    --orange:#F79F1F;
+    --orange:#A01C34;
     --text-color-1: #444;
     --text-color-2:#666;
     --bg-color-1: #fff;
@@ -27,6 +27,7 @@ a{
     text-decoration: none;
 }
 body.active{
+    --orange:#F79F1F;
     --text-color-1: #fff;
     --text-color-2:#eee;
     --bg-color-1: #333;
