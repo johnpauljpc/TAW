@@ -27,6 +27,7 @@ a{
     text-decoration: none;
 }
 body.active{
+    
     --orange:#F79F1F;
     --text-color-1: #fff;
     --text-color-2:#eee;
@@ -38,7 +39,7 @@ body.active{
 
 
 html{
-    font-size: 63%;
+    font-size: 65%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
@@ -287,42 +288,9 @@ section{
     padding: 1rem 0;
 }
 
+/* form container */
 
-.form-container form{
-    background: var(--bg-color-1);
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-}
 
-.form-container form .inputBox{
-    flex: 1 1 23rem;
-}
-
-.form-container form .inputBox span{
-    font-size: 1.7rem;
-    color: var(--text-color-2);
-}
-
-.form-container form .inputBox input{
-    font-size: 1.5rem;
-    color: var(--text-color-1);
-    background: var(--bg-color-2);
-    border-radius: .5rem;
-    margin: .5rem 0;
-    text-transform: none;
-    width: 100%;
-    padding: 1rem;
-}
-
-.form-container form .btn{
-    flex: 1 1 23rem;
-
-}
 
 /* heading and places */
 
@@ -345,6 +313,69 @@ section{
     background: var(--orange);
     height: 100%; width: 100%;
     clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+}
+
+
+.form-section{
+    /*  */
+
+    border-radius: .5rem;
+    max-width: 70rem;
+    padding: .5rem;
+    
+}
+.form-container {
+    align-items: center;
+    
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.form-container .inputBox{
+    flex: 1 1 23rem;
+    
+}
+
+.form-container .inputBox span{
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+}
+
+.form-container .checkbox span{
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+    display: block;
+}
+.form-container .checkbox{
+    display: inline;
+    font-size: 1.7rem;
+    color: var(--text-color-1);
+}
+
+input[type="radio"] {
+    accent-color: var(--orange);
+}
+
+
+.form-container .inputBox input{
+    box-shadow: var(--box-shadow);
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-container .btn{
+    flex: 1 1 23rem;
+
 }
 
 .packages .box-container{
