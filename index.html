@@ -102,7 +102,7 @@
 <section class="">
     
     <div class="form-section">
-            <p>In order to process your application to receive your Fast Track Visa On Arrival (VOA), we need the following information. </p>
+            <p><b>In order to process your application to receive your Fast Track Visa On Arrival (VOA), we need the following information:</b> </p>
             
     <form action="">
         <div class="form-container">
@@ -158,10 +158,10 @@
 
         <div class="form-container">
             <div class="checkbox" data-aos="fade-up">
-                <span>Are others traveling with you?</span>
-                <input type="radio" name="trv-opt" id="opt1"> No <br> 
-                <input type="radio" name="trv-opt" id="opt2"> Yes. How many? 
-                <input type="text" name="" id="" style="background: none; border-bottom: .1rem solid rgb(73, 64, 64);">
+                <span><b>Are others traveling with you?</b></span>
+                <input type="radio" name="trv-opt" id="opt1" onclick="hideTr()"> No <br> 
+                <input type="radio" name="trv-opt" id="opt2" onclick="showTr()"> Yes <font class="trv-opt2" style="display: none;"> . How many?</font> 
+                <input  class="trv-opt22" type="text" name="" id="" style="background: none; border-bottom: .1rem solid rgb(73, 64, 64); display: none;">
             </div>
             </div>
 
@@ -180,7 +180,7 @@
                 
                 <div class="form-container" style="margin: 15px 0!important;">
                     <div class="inputBox" data-aos="fade-up">
-                        <span>Will someone be in Nigeria to greet you at the airport? If yes, then please answer below: </span>
+                        <span><b>Will someone be in Nigeria to greet you at the airport? If yes, then please answer below: </b></span>
                     </div>
                 </div>
                 <div class="form-container">
@@ -202,7 +202,7 @@
                 
                 <div class="form-container">
                     <div class="inputBox" data-aos="fade-up" style="margin: 15px 0!important;">
-                        <span>Emergency Contact in Home Country: </span>
+                        <span><b>Emergency Contact in Home Country:</b> </span>
                     </div>
                 </div>
                 
@@ -220,9 +220,46 @@
                 </div>
            
             </div>
-            <div class="form-container">
+            <div>
+                
+                <div class="form-container" style="margin: 15px 0!important;">
+                    <div class="inputBox" data-aos="fade-up" style="background: #fff; text-align: center">
+                        <span>TRANSPORTATION </span>
+                    </div>
+                </div>
+                <div class="form-container">
+                
+                    <div class="checkbox" data-aos="fade-up">
+                        <span><b>Please indicate if you will need transportation on the day of your Arrival and Departure</b>
+                            </span>
+                            <input type="checkbox" name="opt-trsp" id="opt1">I will need transportation from the airport 
+                            to my housing accommodations on the day of my Arrival ($50) <br> 
+                    <input type="checkbox" name="opt-trsp" id="opt2"> I will need transportation from my housing 
+                    accommodation to the airport of the day of my Departure. ($50) <br>
+                    <input type="checkbox" name="opt-trsp" id="opt3">For my arrival, I will need transportation for 
+                    my Relative to be picked up and brought to the airport to greet me, 
+                    and then take us both to our accommodation from the airport ($100)  <br> 
+                    <input type="checkbox" name="opt-trsp" id="opt4"> I will also need this for my Departure, 
+                    to have my My Relative dropped off, after seeing me off and leaving the airport. ($100).
+                    </div>
+            
+                    <div class="checkbox" data-aos="fade-up">
+                        <span>Would you like to have a security officer to escort you during your stay?
+                            </span>
+                            <input type="radio" name="sec-opt" id="sec-no" onclick="hide()"> No <br> 
+                    <input type="radio" name="sec-opt" id="sec-yes" onclick="show()"> Yes <br>
+                    <div class="sec-opt2">
+                        &nbsp; &nbsp; <input type="checkbox" name="sec-opt" id=""> Private Officer  $40 daily<br>
+                    &nbsp; &nbsp; <input type="checkbox" name="sec-opt" id=""> Police Officer   $60 daily<br>
+                    &nbsp; &nbsp; <input type="checkbox" name="sec-opt" id=""> Visibly Armed $75 daily subcharge (in addition to above Officer Charge)<br>
+                    
 
+                    </div>
+                    </div>  
+                </div>
+           
             </div>
+            
             
     </form>
         </div>

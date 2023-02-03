@@ -369,6 +369,10 @@ section{
 input[type="radio"] {
     accent-color: var(--orange);
 }
+input[type="checkbox"] {
+    accent-color: var(--orange);
+}
+
 
 
 .form-container .inputBox input{
@@ -386,6 +390,9 @@ input[type="radio"] {
 .form-container .btn{
     flex: 1 1 23rem;
 
+}
+.sec-opt2{
+    display: none;
 }
 
 .packages .box-container{
