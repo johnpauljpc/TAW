@@ -77,3 +77,9 @@ var swiper = new Swiper(".review-slider", {
         trvOpt2.style.display = 'none'
         trvOpt22.style.display = 'none'
     }
+
+
+    const Diff = document.querySelector('.diff')
+    function differ(){
+        Diff.style.display = 'inline'
+    }

@@ -361,10 +361,12 @@ section{
     display: block;
 }
 .form-container .checkbox{
-    display: inline;
+    /* display: inline; */
     font-size: 1.7rem;
     color: var(--text-color-1);
 }
+
+
 
 input[type="radio"] {
     accent-color: var(--orange);
