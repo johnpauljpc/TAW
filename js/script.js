@@ -83,3 +83,5 @@ var swiper = new Swiper(".review-slider", {
     function differ(){
         Diff.style.display = 'inline'
     }
+
+    
